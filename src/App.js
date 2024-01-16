@@ -19,7 +19,6 @@ export default function App() {
 
   // predefinening theme of this site 
   useEffect(() => {
-    console.log(config.API_KEY)
     if (localStorage.theme !== 'light' && localStorage.theme !== 'dark') {
       localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
